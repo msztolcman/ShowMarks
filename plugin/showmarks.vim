@@ -513,7 +513,7 @@ if !isdirectory(docdir)
   echoerr 'Please make '.docdir.' directory first'
   unlet docdir
   finish
- elseif !has("mac")
+ else
   exe "!mkdir ".docdir
  endif
 endif
